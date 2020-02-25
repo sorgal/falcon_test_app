@@ -41,6 +41,7 @@ group :development do
   gem 'rails-perftest'
   gem 'ruby-prof'
   gem 'rack-mini-profiler'
+  gem 'faker', :git => 'https://github.com/faker-ruby/faker.git', :branch => 'master'
 end
 
 group :test do
