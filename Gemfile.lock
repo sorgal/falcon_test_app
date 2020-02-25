@@ -1,4 +1,14 @@
 GIT
+  remote: git://github.com/seyhunak/twitter-bootstrap-rails.git
+  revision: a9a5b41735cdb37e0dcb878eb25dcdf6174412cd
+  specs:
+    twitter-bootstrap-rails (4.0.0)
+      actionpack (>= 5.0, < 7.0)
+      execjs (~> 2.7)
+      less-rails (>= 3.0, < 5.0)
+      railties (>= 5.0, < 7.0)
+
+GIT
   remote: https://github.com/faker-ruby/faker.git
   revision: d13a99ffe924936b061bef638885fa2d4e6dedfe
   branch: master
@@ -100,10 +110,12 @@ GEM
       regexp_parser (~> 1.5)
       xpath (~> 3.2)
     childprocess (3.0.0)
+    commonjs (0.2.7)
     concurrent-ruby (1.1.6)
     console (1.8.1)
     crass (1.0.6)
     erubi (1.9.0)
+    execjs (2.7.0)
     falcon (0.35.4)
       async (~> 1.13)
       async-container (~> 0.16.0)
@@ -121,6 +133,12 @@ GEM
       concurrent-ruby (~> 1.0)
     jbuilder (2.10.0)
       activesupport (>= 5.0.0)
+    less (2.6.0)
+      commonjs (~> 0.2.7)
+    less-rails (4.0.0)
+      actionpack (>= 4)
+      less (~> 2.6.0)
+      sprockets (>= 2)
     listen (3.1.5)
       rb-fsevent (~> 0.9, >= 0.9.4)
       rb-inotify (~> 0.9, >= 0.9.7)
@@ -215,6 +233,13 @@ GEM
     selenium-webdriver (3.142.7)
       childprocess (>= 0.5, < 4.0)
       rubyzip (>= 1.2.2)
+    slim (4.0.1)
+      temple (>= 0.7.6, < 0.9)
+      tilt (>= 2.0.6, < 2.1)
+    slim-rails (3.2.0)
+      actionpack (>= 3.1)
+      railties (>= 3.1)
+      slim (>= 3.0, < 5.0)
     sprockets (4.0.0)
       concurrent-ruby (~> 1.0)
       rack (> 1, < 3)
@@ -222,6 +247,7 @@ GEM
       actionpack (>= 4.0)
       activesupport (>= 4.0)
       sprockets (>= 3.0.0)
+    temple (0.8.2)
     thor (1.0.1)
     thread_safe (0.3.6)
     tilt (2.0.10)
@@ -269,7 +295,9 @@ DEPENDENCIES
   ruby-prof
   sass-rails (>= 6)
   selenium-webdriver
+  slim-rails
   turbolinks (~> 5)
+  twitter-bootstrap-rails!
   tzinfo-data
   web-console (>= 3.3.0)
   webdrivers
